@@ -1,11 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
+
+import Navbar from "components/Navbar";
+
+import header from "utils/data/header.json";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import GlobalStyle from "utils/style/globalStyle";
 
 const App = ({ Component, pageProps }) => {
   return (
     <>
       <GlobalStyle />
+      <Navbar logo={header.logo} items={header.links} />
       <Component {...pageProps} />
     </>
   )

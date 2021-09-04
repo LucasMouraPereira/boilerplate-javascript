@@ -1,9 +1,11 @@
 import React from "react";
+import HomeContainer from "containers/Home";
+import form from "utils/data/form.json";
 
 const Home = () => {
   return (
     <>
-      This is a Boilerplate
+      <HomeContainer form={form} />
     </>
   )
 }

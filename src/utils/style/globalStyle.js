@@ -16,6 +16,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  body {
+    background: #f7f7f7;
+  }
+
   @font-face {
     font-family: 'Roboto';
     src: url(${bold}) format("truetype");
